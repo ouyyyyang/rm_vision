@@ -31,7 +31,7 @@ armor_tracker_node = Node(
 
 fire_control_node = Node(
     package='fire_control',
-    executable='fire_tracker_node',
+    executable='fire_control_node',
     output='both',
     emulate_tty=True,
     parameters=[node_params],
