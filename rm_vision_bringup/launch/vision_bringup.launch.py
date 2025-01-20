@@ -93,7 +93,7 @@ def generate_launch_description():
     )
     
     delay_auto_record_node = TimerAction(
-        period=3,
+        period=3.0,
         actions=[auto_record_node],
     )
 
