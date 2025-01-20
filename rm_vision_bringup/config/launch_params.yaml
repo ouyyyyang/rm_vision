@@ -6,6 +6,7 @@ odom2camera:
 
 armor_detector_log_level: INFO
 armor_tracker_log_level: INFO
+fire_control_log_level: INFO
 buff_detector_log_level: INFO
 buff_tracker_log_level: INFO
 serial_log_level: INFO

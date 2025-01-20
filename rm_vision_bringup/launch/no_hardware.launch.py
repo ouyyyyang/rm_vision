@@ -6,7 +6,7 @@ sys.path.append(os.path.join(get_package_share_directory('rm_vision_bringup'), '
 
 def generate_launch_description():
 
-    from common import launch_params, robot_state_publisher, node_params, armor_tracker_node, buff_tracker_node
+    from common import launch_params, robot_state_publisher, node_params, armor_tracker_node, buff_tracker_node, fire_control_node
     from launch_ros.actions import Node
     from launch import LaunchDescription
 
@@ -35,5 +35,6 @@ def generate_launch_description():
         armor_detector_node,
         buff_detector_node,
         armor_tracker_node,
-        buff_tracker_node
+        buff_tracker_node,
+        fire_control_node,
     ])

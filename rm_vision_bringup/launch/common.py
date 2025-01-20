@@ -29,6 +29,15 @@ armor_tracker_node = Node(
     ros_arguments=['--log-level', 'armor_tracker:='+launch_params['armor_tracker_log_level']],
 )
 
+fire_control_node = Node(
+    package='fire_control',
+    executable='fire_tracker_node',
+    output='both',
+    emulate_tty=True,
+    parameters=[node_params],
+    ros_arguments=['--log-level', 'fire_control:='+launch_params['fire_control_log_level']],
+)
+
 buff_tracker_node = Node(
     package='buff_tracker',
     executable='buff_tracker_node',
