@@ -6,7 +6,7 @@ sys.path.append(os.path.join(get_package_share_directory('rm_vision_bringup'), '
 
 def generate_launch_description():
 
-    from common import node_params, launch_params, robot_state_publisher, armor_tracker_node, buff_tracker_node, fire_control_node, auto_record_node
+    from common import node_params, launch_params, robot_state_publisher, armor_tracker_node, buff_tracker_node, fire_control_node
     from launch_ros.descriptions import ComposableNode
     from launch_ros.actions import ComposableNodeContainer, Node
     from launch.actions import TimerAction, Shutdown
@@ -92,17 +92,11 @@ def generate_launch_description():
         actions=[fire_control_node],
     )
     
-    delay_auto_record_node = TimerAction(
-        period=3,
-        actions=[auto_record_node],
-    )
-
     return LaunchDescription([
         robot_state_publisher,
         cam_detector,       
         delay_serial_node,
         delay_armor_tracker_node,
         delay_buff_tracker_node,
-        delay_fire_control_node,
-        delay_auto_record_node
+        delay_fire_control_node
     ])

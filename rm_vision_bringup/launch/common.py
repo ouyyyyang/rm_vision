@@ -47,11 +47,3 @@ buff_tracker_node = Node(
     ros_arguments=['--log-level', 'buff_tracker:='+launch_params['buff_tracker_log_level']],
 )
 
-auto_record_node = Node(
-    package='rm_auto_record',
-    executable='rm_auto_record_node',
-    output='both',
-    emulate_tty=True,
-    parameters=[node_params],
-    ros_arguments=['--log-level', 'rm_auto_record:='+launch_params['auto_record_log_level']],
-)
