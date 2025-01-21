@@ -92,6 +92,14 @@ def generate_launch_description():
         actions=[fire_control_node],
     )
     
+<<<<<<< HEAD
+=======
+    delay_auto_record_node = TimerAction(
+        period=3.0,
+        actions=[auto_record_node],
+    )
+
+>>>>>>> d6358a51c8206158fa791f27b7768374b4acd542
     return LaunchDescription([
         robot_state_publisher,
         cam_detector,       

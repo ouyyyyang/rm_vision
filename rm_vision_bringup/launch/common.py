@@ -31,7 +31,7 @@ armor_tracker_node = Node(
 
 fire_control_node = Node(
     package='fire_control',
-    executable='fire_tracker_node',
+    executable='fire_control_node',
     output='both',
     emulate_tty=True,
     parameters=[node_params],
@@ -47,3 +47,14 @@ buff_tracker_node = Node(
     ros_arguments=['--log-level', 'buff_tracker:='+launch_params['buff_tracker_log_level']],
 )
 
+<<<<<<< HEAD
+=======
+auto_record_node = Node(
+    package='rm_auto_record',
+    executable='rm_auto_record_node',
+    output='both',
+    emulate_tty=True,
+    parameters=[node_params],
+    ros_arguments=['--log-level', 'rm_auto_record:='+launch_params['auto_record_log_level']],
+)
+>>>>>>> d6358a51c8206158fa791f27b7768374b4acd542
