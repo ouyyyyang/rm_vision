@@ -91,7 +91,7 @@ def generate_launch_description():
         period=2.5,
         actions=[fire_control_node],
     )
-    
+ 
     return LaunchDescription([
         robot_state_publisher,
         cam_detector,       

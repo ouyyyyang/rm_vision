@@ -46,5 +46,3 @@ buff_tracker_node = Node(
     parameters=[node_params],
     ros_arguments=['--log-level', 'buff_tracker:='+launch_params['buff_tracker_log_level']],
 )
-
-

@@ -1,8 +1,8 @@
 /camera_node:
   ros__parameters:
     camera_info_url: package://rm_vision_bringup/config/camera_info.yaml
-    exposure_time: 3000
-    gain: 12.0
+    exposure_time: 1200
+    gain: 16.0
 
 /serial_driver:
   ros__parameters:
@@ -18,7 +18,7 @@
     debug: true
 
     detect_color: 0
-    binary_thres: 78
+    binary_thres: 85
 
     light.min_ratio: 0.1
     light.min_fill_ratio: 0.6
@@ -119,5 +119,3 @@
       robot_z_ground: 416.0
       distance: 6626.0
       max_distance_diff: 120.0
-
-
