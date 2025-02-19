@@ -92,6 +92,8 @@ def generate_launch_description():
         actions=[fire_control_node],
     )
  
+
+
     return LaunchDescription([
         robot_state_publisher,
         cam_detector,       
