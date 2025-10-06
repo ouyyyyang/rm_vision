@@ -96,17 +96,4 @@ ros2 launch rm_vision_bringup vision_bringup.launch.py
 
 TBD
 
-文件路径
-task1/
 
-├── data/
-
-│   ├── train/
-
-│   └── test/
-
-├── src/
-
-│   └── main.py
-
-└── README.md
