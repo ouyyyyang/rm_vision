@@ -98,9 +98,15 @@ TBD
 
 文件路径
 task1/
+
 ├── data/
+
 │   ├── train/
+
 │   └── test/
+
 ├── src/
+
 │   └── main.py
+
 └── README.md
